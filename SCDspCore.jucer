@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="C8jqFM" name="SCDspCore" projectType="library" useAppConfig="0"
+              addUsingNamespaceToJuceHeader="0" displaySplashScreen="1" jucerFormatVersion="1"
+              companyName="SleepyCat" headerPath="../../Headers">
+  <MAINGROUP id="TuMFqd" name="SCDspCore">
+    <GROUP id="{6DB036D9-91B0-B178-1426-96FBE4ED2F01}" name="Source">
+      <FILE id="km6bxL" name="SCEnvelopeFollower.cpp" compile="1" resource="0"
+            file="Source/SCEnvelopeFollower.cpp"/>
+      <FILE id="KBE5Gz" name="SCOnePoleFilter.cpp" compile="1" resource="0"
+            file="Source/SCOnePoleFilter.cpp"/>
+      <FILE id="z9hQoS" name="SCOscillator.cpp" compile="1" resource="0"
+            file="Source/SCOscillator.cpp"/>
+      <FILE id="MoidzB" name="SCSmoothingFilter.cpp" compile="1" resource="0"
+            file="Source/SCSmoothingFilter.cpp"/>
+      <FILE id="KQQHFD" name="SCWavetableOsc.cpp" compile="1" resource="0"
+            file="Source/SCWavetableOsc.cpp"/>
+    </GROUP>
+    <GROUP id="{7B0A3BE5-8A91-CFC3-8352-7DE655733D8C}" name="Headers">
+      <FILE id="cFe8Po" name="SCBiquadFilter.h" compile="0" resource="0"
+            file="Headers/SCBiquadFilter.h"/>
+      <FILE id="iA1H2w" name="SCBiquadFilterCoeff.h" compile="0" resource="0"
+            file="Headers/SCBiquadFilterCoeff.h"/>
+      <FILE id="oeh9ST" name="SCBiquadFilterUtil.h" compile="0" resource="0"
+            file="Headers/SCBiquadFilterUtil.h"/>
+      <FILE id="vPwhL7" name="SCEnvelopeFollower.h" compile="0" resource="0"
+            file="Headers/SCEnvelopeFollower.h"/>
+      <FILE id="ybxJWF" name="SCMath.h" compile="0" resource="0" file="Headers/SCMath.h"/>
+      <FILE id="l1BLMN" name="SCOnePoleFilter.h" compile="0" resource="0"
+            file="Headers/SCOnePoleFilter.h"/>
+      <FILE id="z8bxNp" name="SCOscillator.h" compile="0" resource="0" file="Headers/SCOscillator.h"/>
+      <FILE id="NXmw38" name="SCSmoothingFilter.h" compile="0" resource="0"
+            file="Headers/SCSmoothingFilter.h"/>
+      <FILE id="GcFaR5" name="SCWavetableOsc.h" compile="0" resource="0"
+            file="Headers/SCWavetableOsc.h"/>
+    </GROUP>
+  </MAINGROUP>
+  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1"/>
+  <EXPORTFORMATS>
+    <VS2019 targetFolder="Builds/VisualStudio2019">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="SCDspCore"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="SCDspCore"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_core" path="../../../Juce/Modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../../Juce/Modules"/>
+        <MODULEPATH id="juce_events" path="../../../Juce/Modules"/>
+      </MODULEPATHS>
+    </VS2019>
+    <XCODE_MAC targetFolder="Builds/MacOSX">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="SCDspCore"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="SCDspCore"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_core" path="../../../Juce/Modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../../Juce/Modules"/>
+        <MODULEPATH id="juce_events" path="../../../Juce/Modules"/>
+      </MODULEPATHS>
+    </XCODE_MAC>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+  </MODULES>
+</JUCERPROJECT>
