@@ -24,7 +24,8 @@ m_fAverage(0),
 m_fNoiseAverage(0),
 m_fNumAverageSamples(1),
 m_fFallingSquareDiff(0),
-m_fFallingSquareState(0)
+m_fFallingSquareState(0),
+m_nPhaseOffset(0)
 {
 	m_pOutputSmoother.reset(new SCSmoothingFilter());
 	m_pOutputSmoother->setSamplerate(m_nSamplerate);
@@ -88,7 +89,8 @@ float SCOscillator::process()
 	}
 	else
 	{
-		float sample = static_cast<float>(m_nPhase) / 0x7FFFFFFF;
+		int32_t combinedValue = m_nPhase + m_nPhaseOffset;
+		float sample = static_cast<float>(combinedValue) / 0x7FFFFFFF;
 		sample = cookWaveform(sample);
 		sample = (m_bApplyPolyBlep) ? applyPolyBlep(sample) : sample;
 

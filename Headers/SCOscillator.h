@@ -31,6 +31,7 @@ namespace SCDsp
 		void setWaveform(int wave);
 		void setApplyPolyBlep(bool applyPolyBlep) { m_bApplyPolyBlep = applyPolyBlep; }
 		void setPulseWidth(float pulseWidth) { m_fPulseWidth = pulseWidth; cookPulseWidth(); }
+		void setPhaseOffset(int32_t offset) { m_nPhaseOffset = offset; }
 
 		int32_t getPhase() { return m_nPhase; }
 
@@ -51,6 +52,7 @@ namespace SCDsp
 		int32_t m_nPwLeftInc;
 		int32_t m_nPwRightInc;
 		int32_t m_nSamplerate;
+		int32_t m_nPhaseOffset;
 		uint32_t m_nWaveform;
 		float m_fFrequency;
 		float m_fPulseWidth;
