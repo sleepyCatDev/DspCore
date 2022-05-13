@@ -17,6 +17,10 @@
             file="Source/SCWavetableOsc.cpp"/>
     </GROUP>
     <GROUP id="{7B0A3BE5-8A91-CFC3-8352-7DE655733D8C}" name="Headers">
+      <FILE id="i2SUGO" name="SCInterpolatedCircularBuffer.h" compile="0"
+            resource="0" file="Source/SCInterpolatedCircularBuffer.h"/>
+      <FILE id="nkU0L8" name="SCCircularBuffer.h" compile="0" resource="0"
+            file="Source/SCCircularBuffer.h"/>
       <FILE id="cFe8Po" name="SCBiquadFilter.h" compile="0" resource="0"
             file="Headers/SCBiquadFilter.h"/>
       <FILE id="iA1H2w" name="SCBiquadFilterCoeff.h" compile="0" resource="0"
